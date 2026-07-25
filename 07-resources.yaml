@@ -1,7 +1,7 @@
 kind: Pod
 apiVersion: v1
 metadata:
-  name: env
+  name: resources
 spec:
   containers:
   - name: nginx
@@ -11,7 +11,7 @@ spec:
       requests:
         memory: "68Mi"
         cpu: "100m"
-        # hard limit 
-        limits:
-          memory: "128Mi"
-          cpu: "150m"
+      # hard limit
+      limits:
+        memory: "128Mi"
+        cpu: "150m"
