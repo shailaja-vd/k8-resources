@@ -39,7 +39,7 @@ metadata:
 spec:
   type: LoadBalancer
   selector: # labels are used as selectors
-      purpose: "ebs-static-demo"
+    purpose: "ebs-static-demo"
   ports:
   - protocol: TCP
     port: 80 # service port
