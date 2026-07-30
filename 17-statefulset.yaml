@@ -8,7 +8,7 @@ metadata:
 spec:
   ports:
   - port: 80
-    name: nginx
+    name: web
   clusterIP: None
   selector:
     app: nginx
@@ -16,7 +16,7 @@ spec:
 apiVersion: apps/v1
 kind: StatefulSet
 metadata:
-  name: nginx
+  name: web
 spec:
   selector:
     matchLabels:
